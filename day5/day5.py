@@ -1,4 +1,3 @@
-import regex
 
 def main():
     with open("input.txt", "r") as f:
@@ -69,9 +68,13 @@ def location_finder(seed, map_dict):
                 break
     return current_value
 
+def location_ranger(seed_range, map_dict):
+    current_ranges = [seed_range]
+
+
 
 def part_two(f):
-    return f
+    map_dict = map_const(f)
 
 if __name__ == "__main__":
     main()
